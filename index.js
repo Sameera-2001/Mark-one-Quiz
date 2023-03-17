@@ -1,6 +1,7 @@
 var readlineSync=require('readline-sync');
 var name=readlineSync.question("Enter your name ");
 console.log("Hey "+name+" Welcome!");
+var score=0;
 function play(question,answer)
 {
   var userAns=readlineSync.question(question);
@@ -29,7 +30,11 @@ var arr=[
   },
   Q4={
     question: "How many seasons of stranger things were released? ",
-    answer: "5" 
+    answer: "4" 
+  },
+  Q5={
+  question:"RRR won oscar in which year? ",
+  answer:"2023"
   }
 ]
 for(var i=0;i<arr.length;i++)
