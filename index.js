@@ -1,7 +1,6 @@
 var readlineSync=require('readline-sync');
 var name=readlineSync.question("Enter your name ");
 console.log("Hey "+name+" Welcome!");
-var score=0;
 function play(question,answer)
 {
   var userAns=readlineSync.question(question);
